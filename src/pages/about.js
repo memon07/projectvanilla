@@ -1,10 +1,13 @@
 import React from 'react'
 import '../css/about.css'
+
 import Link from 'gatsby-link'
+import SEO from '../components/seo'
 
 const AboutPage = () => {
     return (
     <div className="about">
+    <SEO title="About" />
         <div className="container">
             <h5>
                 <Link to="/" style={{color:'white'}}>/ Home</Link>
