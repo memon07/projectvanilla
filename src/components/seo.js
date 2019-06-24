@@ -74,7 +74,24 @@ function SEO({ description, lang, meta, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: ['blog','design','coding','programming','website'],
+  meta: [
+    {
+      name: `blog`,
+      content: 'blog',
+    },
+    {
+      name: `design`,
+      content: 'design',
+    },
+    {
+      name: `coding`,
+      content: 'coding',
+    },
+    {
+      name: `programming`,
+      content: 'programming',
+    }
+  ],
   description: `Blog for designers and developers`,
 }
 
