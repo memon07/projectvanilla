@@ -1,6 +1,6 @@
 ---
 path: "/introduction-post"
-date: "2019-06-26"
+date: "06-26-2019"
 title: "Introduction Post"
 author: "shoyeb memon"  
 ---

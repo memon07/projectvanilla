@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
+import '../css/index.css'
 import SEO from "../components/seo"
 
 
@@ -13,19 +13,25 @@ const IndexPage = ({data}) => {
   <>
     <Layout>
       <SEO title="Home" />
-      <div>
+      <div className="container">
+        <div className="row">
+        <div className="col-lg-6 col-md-6 col-sm-12 no-gutters">
           {
               data.allMarkdownRemark.edges.map(post => (
-                   <Link to={post.node.frontmatter.path}>
+                <div className="blog-card">
+                   <Link to={post.node.frontmatter.path} style={{color:'black'}}>
                       <div key={parseInt(post.node.id)}>
                           <h1>{post.node.frontmatter.title}</h1>
                           <h5>by {post.node.frontmatter.author}</h5>
                           <h5>{post.node.frontmatter.date}</h5>
                        </div>
                     </Link> 
+                </div>
               )
             )
           }
+        </div>
+        </div>
       </div>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       </div>
