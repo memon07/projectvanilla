@@ -19,7 +19,7 @@ const IndexPage = ({data}) => {
           {
               data.allMarkdownRemark.edges.map(post => (
                 <div className="blog-card">
-                   <Link to={post.node.frontmatter.path} style={{color:'black'}}>
+                   <Link to={post.node.frontmatter.path} style={{color:'black',textDecoration:'none'}}>
                       <div key={parseInt(post.node.id)}>
                           <h1>{post.node.frontmatter.title}</h1>
                           <h5>by {post.node.frontmatter.author}</h5>
