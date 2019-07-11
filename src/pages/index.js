@@ -15,7 +15,7 @@ const IndexPage = ({data}) => {
       <SEO title="Home" />
       <div className="container">
         <div className="row">
-        <div className="col-lg-6 col-md-6 col-sm-12 no-gutters">
+        <div className="col-lg-6 col-md-6 col-sm-12" style={{padding:0}}>
           {
               data.allMarkdownRemark.edges.map(post => (
                 <div className="blog-card">
