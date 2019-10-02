@@ -26,14 +26,14 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div style={{backgroundColor:'black',color:'white'}}>
+    <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container"
       >
         <main>{children}</main>
       </div>
       <Footer/>
-    </div>
+    </>
   )
 }
 

@@ -92,7 +92,7 @@ SEO.defaultProps = {
       content: 'programming',
     }
   ],
-  description: `Blog for designers and developers`,
+  description: `shoyeb memon`,
 }
 
 SEO.propTypes = {

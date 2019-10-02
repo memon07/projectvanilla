@@ -1,7 +1,7 @@
 module.exports = [{
-      plugin: require('E:/projectvanilla/node_modules/gatsby-plugin-catch-links/gatsby-browser.js'),
+      plugin: require('E:/Demo-zone/website/node_modules/gatsby-plugin-catch-links/gatsby-browser.js'),
       options: {"plugins":[]},
     },{
-      plugin: require('E:/projectvanilla/gatsby-browser.js'),
+      plugin: require('E:/Demo-zone/website/gatsby-browser.js'),
       options: {"plugins":[]},
     }]
