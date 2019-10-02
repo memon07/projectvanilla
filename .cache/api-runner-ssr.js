@@ -4,6 +4,9 @@ var plugins = [{
     },{
       plugin: require('E:/Demo-zone/website/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"white","theme_color":"white","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
+    },{
+      plugin: require('E:/Demo-zone/website/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
+      options: {"plugins":[],"fonts":[{"family":"Oswald","subsets":["latin"]},{"family":"Open Sans","variants":["400","700"]}]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
